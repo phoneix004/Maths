@@ -2,6 +2,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
     <title>Calculate</title>
 </head>
 <body>
@@ -22,13 +25,22 @@
     </div>
 </body>
 <style>
+    body{
+        background-color: #ddffbb;
+        font-size: 30px;
+    }
     #timer{
         height: 30%;
         align-items: center;
         justify-content: center;
         text-align: center;
-        font-family: cursive;
+        font-family:cursive;
        
+    }
+    #timer p{
+        font-size: 80px;
+        font-family: 'Teko', sans-serif;
+
     }
     #problem{
         height: 60%;
@@ -48,10 +60,42 @@
     justify-content: center;
     gap: 20px; /* Optional: Add some space between buttons */
     }
+    #gameOver {
+    color: red;
+    margin-top: 10px;
+    }
 
     #min,#sec,#question,#ans{
+    margin: 10px 0;
+    font-size: 24px;
     display: inline-block;
+    }
     
+    #btns button {
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    #btns button:hover {
+        background-color: #45a049;
+    }
+    #switch button {
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    #switch button:hover {
+        background-color: #45a049;
     }
 
 </style>
