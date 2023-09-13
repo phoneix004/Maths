@@ -3,29 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Navigation</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            background-color: #f0f0f0;            
+            padding: 10px;
+            display:grid;
+            /* justify-content: center;
+            align-items: center; */
+            height:50vh;
         }
 
         .button-container {
+            margin: auto;
             text-align: center;
         }
 
         .green-button {
             background-color: #4CAF50;
             color: white;
+            width:100px;
             padding: 20px 40px;
-            font-size: 24px;
-            border: none;
+            font-size: 1em;
+            border: 1px;
+            margin: auto;
             border-radius: 8px;
             cursor: pointer;
             text-decoration: none;
@@ -34,11 +36,19 @@
         .green-button:hover {
             background-color: #45a049;
         }
+        @media only screen and (min-width: 500px){
+            body{
+                display: flex;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="button-container">
-        <a href="navigate.html" class="green-button">Practice</a>
+        <a href="add.html" class="green-button">Addition/subtraction</a>
+    </div>
+    <div class="button-container">
+        <a href="mul.html" class="green-button">Mutiplication   </a>
     </div>
 </body>
 </html>
