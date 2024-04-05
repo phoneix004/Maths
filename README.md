@@ -1,2 +1,2 @@
 # Maths
-THis a javascript projet user for imporoving calculation speed.
+THis a javascript project used for imporoving calculation speed.
